@@ -20,11 +20,13 @@ This gave us a table that showed which GEOID represented the South King County A
 
 
 
+
 Deliverable 2 - Create an update of the estimated number of OY in South King County. In addition the estimate, 
 be sure to include a breakdown of the count of OY by Public Use Microdata Area (PUMA) within South King County;
 
 Method
-2.1 The information was queried in Postico. We queried by age group to 
+2.1 The information was queried in Postico. We queried OY by PUMA within the South King County areas. 
+2.3 The information was turned into a .CSV file and imported into jupyter notedbook as as a dataframe.
 
 
 
@@ -38,13 +40,17 @@ Method
 
 
 Deliverable 4 - A visualization that highlights a trend between the 2016 report and current data.
-4.1 Pie charts were created showing the relationships between different data sets. 
+4.1 Pie charts were created using matplotlib showing the relationships between different requested data sets. 
 
 
 
 Resources. 
 
 Jupyter notebooks can be found in the following locations
+- opportunity_youth/tree/master/notebooks/exploratory
+
+CSV files can be found in the following location
+- opportunity_youth/data/processed
 
 
 The SRP has asked that any extra time remaining be used to create the following items:
