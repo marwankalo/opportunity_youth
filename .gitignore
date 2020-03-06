@@ -3,11 +3,11 @@
 log/*.txt
 
 # Data files
-*.csv
+data/raw/*.csv
 *.db
 *.sqlite
-*.xls
-*.xlsx
+.xls
+.xlsx
 *.zip
 *.tar.gz
 *csv.gz
@@ -16,7 +16,7 @@ log/*.txt
 *.cpg  
 *.dbf  
 *.prj  
-*.shp  
+data/raw/*.shp  
 *.shp.ea.iso.xml  
 *.shp.iso.xml  
 *.shp.xml  
