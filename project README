@@ -1,1 +1,56 @@
+This document acts a user guide to those wanting to review the Opportunity Youth project information
 
+The document also acts as an accompanying notes to the project to enable readers to understand how the 
+various tasks were approached
+
+Deliverable 1 - Produce a map that visualizes which parts of King County are a part of South King County;
+
+Method 
+1.1 We web scraped zip codes for the Washington area from www.zipcodestogo.com
+1.2 A data frame was created to illustrate the city and zip codes only
+1.3 From this data frame we extracted zip codes from cities in South King Countyinto a list.  
+1.4 Next we imported the tract shape file from the project directory giving us access to the geometry of the areas
+of interest. (**ADD path**)
+1.5 The dataframe we created stored data as strings. In order for us to manipulate the GEOID this was information was
+converted into an integers.
+1.6 We then imported the South king county data and queried out all the unique 'trct' codes into a list. 
+1.7 We added a new column to our shape file identifying all the rows that the GEOID included one of our unique 'trct' codes.
+This gave us a table that showed which GEOID represented the South King County Areas.
+1.8 This data was plotted to show the required area of South King County within King County.
+
+
+
+Deliverable 2 - Create an update of the estimated number of OY in South King County. In addition the estimate, 
+be sure to include a breakdown of the count of OY by Public Use Microdata Area (PUMA) within South King County;
+
+Method
+2.1 The information was queried in Postico. We queried by age group to 
+
+
+
+
+Deliverable 3 - An update of the table “Opportunity Youth Status by Age” located on page 2 of the 2016 report “Opportunity Youth in the Road Map Project Region”; and
+
+Method 
+3.1 The required queries were written in Postico and .csv files created from these queries. 
+3.2 Each criteria was imported as .CSV file into jupyter notebook. 
+3.3 Each criteria was then read into a dataframe and data extracted to produce a comparison 2017 table. 
+
+
+Deliverable 4 - A visualization that highlights a trend between the 2016 report and current data.
+4.1 Pie charts were created showing the relationships between different data sets. 
+
+
+
+Resources. 
+
+Jupyter notebooks can be found in the following locations
+
+
+The SRP has asked that any extra time remaining be used to create the following items:
+
+* Create a choropleth map of the count of OY by PUMA within South King County; 
+
+* For South King County, create a choropleth map that shows the percentage of jobs for workers age 29 or younger out of the total number of jobs per census block; and
+
+* Of the census blocks where jobs for workers age 29 or younger are the majority of employed people, what are a few of the industries that employ this group of people?
